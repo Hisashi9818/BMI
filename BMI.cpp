@@ -10,24 +10,21 @@ main() {
     cout<<"Height ";
     cin>>h;
     cout<<endl;
-    double q= w/pow(h,2);
+    double BMI= w/pow(h,2);
     ;cout<<"------------------"<<endl;
     ;cout<<"Your weight is (kg): "<<w<<endl;
     ;cout<<"Your height is (m) : "<<h<<endl;
      cout<<"------Result-------"<<endl;
-;cout<<"BMI="; ;cout<<setprecision(1)<<fixed<<round(q*10)/10<<endl;
-    if (q<20){
-    cout<<"Skinny person";
-
-}
-
-    if (20<=q<=30){
-    cout<<"Ideal person";
-
-}
-    if (q>30){
-    cout<<"Fat person";
-
-}
+;cout<<"BMI="; ;cout<<setprecision(1)<<fixed<<round(BMI*10)/10<<endl;
+   
+    if(BMI < 20)
+        cout << "You are thin";
+    else
+        if(BMI >= 20 && BMI <= 30)
+        cout << "You are healthy";
+    else
+        if(BMI > 30)
+        cout << "You are fat";
+    
     }
 
